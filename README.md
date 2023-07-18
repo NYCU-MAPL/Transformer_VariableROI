@@ -48,7 +48,9 @@ By modifying the files `examples/eval_*.py`, the evaluation can be done in diffe
 
 ## Pre-trained Weights
 The following released weight is for our proposed method on variable-rate with ROI functionalitiy.
-[download link](http://mapl.nctu.edu.tw/TransTIC_Weights/transformer_variablerate_roi.pth.tar)
+<a href="http://mapl.nctu.edu.tw/TransTIC_Weights/transformer_variablerate_roi.pth.tar" download>
+  download link
+</a>
 
 ## Citation
 If you find our project useful, please cite the following paper.

@@ -29,17 +29,18 @@ The following datasets are used and needed to be downloaded.
 Specify the data paths, target rate point, corresponding lambda, and checkpoint in the config file accordingly
 
 ### Training
-We adopt three-stage training.
-(1) Base codec pre-train for single rate: `python examples/1_basecodec.py -c config/base_codec.yaml`
-(2) Train for variable-rate without ROI present: `python examples/2_variablerate.py -c config/2_variablerate.yaml`
-(3) Bring in ROI training: `python examples/3_ROI.py -c config/3_ROI.yaml`
+We adopt three-stage training. 
+- (1) Base codec pre-train for single rate:  <br>`python examples/1_basecodec.py -c config/base_codec.yaml`
+- (2) Train for variable-rate without ROI present:  <br>`python examples/2_variablerate.py -c config/2_variablerate.yaml`
+- (3) Bring in ROI training:  <br>`python examples/3_ROI.py -c config/3_ROI.yaml`
 
 ### Testing
 Here shows example usage for two evaluation settings:
-- (1) Variable-rate compression **without** ROI `(ROI:non-ROI=1:1)` on Kodak (Fig.3a in the paper)
+- (1) Variable-rate compression **without** ROI `(ROI:non-ROI=1:1)` on Kodak (Fig.3a in the paper) <br>
 `python examples/eval_variable.py -c config/eval.yaml`
-- (2) Variable-rate compression **with** ROI `(ROI:non-ROI=1:0)` on COCO Val (Fig.3b in the paper)
+- (2) Variable-rate compression **with** ROI `(ROI:non-ROI=1:0)` on COCO Val (Fig.3b in the paper) <br>
 `python examples/eval_ROI.py -c config/eval.yaml`
+
 By modifying the files `examples/eval_*.py`, the evaluation can be done in different ROI weighting or rate points
 
 ## Pre-trained Weights

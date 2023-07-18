@@ -47,8 +47,8 @@ Here shows example usage for two evaluation settings:
 By modifying the files `examples/eval_*.py`, the evaluation can be done in different ROI weighting or rate points
 
 ## Pre-trained Weights
-The following released weight is for our proposed method on variable-rate with ROI functionalitiy.
-<a id="raw-url" href="http://mapl.nctu.edu.tw/TransTIC_Weights/transformer_variablerate_roi.pth.tar">
+The following released weight is for our proposed method on variable-rate with ROI functionalitiy. <br>
+<a href="https://github.com/NYCU-MAPL/Transformer_VariableROI/releases/download/v1.0/transformer_variablerate_roi.pth.tar" download>
   download link
 </a>
 

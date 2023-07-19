@@ -12,16 +12,16 @@ git clone https://github.com/NYCU-MAPL/Transformer_VariableROI
 cd Transformer_VariableROI
 pip install -U pip
 pip install torch torchvision # have to match with the cuda version (we use 1.12.0+cu113)
-pip install -e .
 pip install pillow==9.2.0
 pip install shapely==1.7.1
+pip install -e .
 pip install timm tqdm click
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 
 ## Dataset
 The following datasets are used and needed to be downloaded.
-- Flicker2W
+- Flicker2W (download [here](https://github.com/liujiaheng/CompressionData), and use [this script](https://github.com/xyq7/InvCompress/tree/main/codes/scripts) for preprocessing)
 - COCO 2012 Train/Val
 - Kodak
 
@@ -30,7 +30,7 @@ Specify the data paths, target rate point, corresponding lambda, and checkpoint 
 
 ### Training
 We adopt three-stage training. 
-1. Base codec pre-train for single rate:  <br>`python examples/1_basecodec.py -c config/base_codec.yaml`
+1. Base codec pre-train for single rate:  <br>`python examples/1_basecodec.py -c config/1_base_codec.yaml`
 
 2. Train for variable-rate without ROI present:  <br>`python examples/2_variablerate.py -c config/2_variablerate.yaml`
 

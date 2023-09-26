@@ -1,7 +1,7 @@
 # Transformer-based Variable-rate Image Compression With Region-of-interest Control
 Accpeted to IEEE ICIP 2023
 
-This repository contains the source code of our ICIP 2023 paper [arXiv](https://arxiv.org/abs/2306.05085).
+This repository contains the source code of our ICIP 2023 paper [arXiv](https://arxiv.org/abs/2305.10807).
 
 ## Abstract
 >This paper proposes a transformer-based learned image compression system. It is capable of achieving variable-rate compression with a single model while supporting the regionof-interest (ROI) functionality. Inspired by prompt tuning, we introduce prompt generation networks to condition the transformer-based autoencoder of compression. Our prompt generation networks generate content-adaptive tokens according to the input image, an ROI mask, and a rate parameter. The separation of the ROI mask and the rate parameter allows an intuitive way to achieve variable-rate and ROI coding simultaneously. Extensive experiments validate the effectiveness of our proposed method and confirm its superiority over the other competing methods.
